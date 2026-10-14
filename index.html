@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FramePlay | Discover Your Next Movie</title>
+
+    <!-- Bootstrap 5.0.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="site-header">
+        <nav class="navbar navbar-dark container py-3">
+
+            <a class="navbar-brand brand-name" href="#home">
+                <span class="brand-mark">
+                    <i class="bi bi-play-fill"></i>
+                </span>
+                FRAME<span>PLAY</span>
+            </a>
+
+            <div class="nav-links ms-lg-5 me-auto">
+                <a class="nav-link active" href="#home">Home</a>
+                <a class="nav-link" href="#trending">Movies</a>
+                <a class="nav-link" href="#series">TV Shows</a>
+                <a class="nav-link" href="#categories">Categories</a>
+            </div>
+
+            <form class="search-box d-none d-md-flex"
+                  action="#trending" method="get">
+
+                <i class="bi bi-search"></i>
+
+                <input type="search"
+                       name="search"
+                       placeholder="Search movies and shows"
+                       aria-label="Search movies and shows">
+            </form>
+
+            <a class="profile-button"
+               href="#my-list"
+               aria-label="My list">
+
+                <i class="bi bi-bookmark-heart"></i>
+            </a>
+
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <main>
+
+        <section class="hero-section" id="home">
+
+            <div class="hero-shade"></div>
+
+            <div class="container hero-content">
+
+                <p class="eyebrow">
+                    <span class="live-dot"></span>
+                    YOUR NEXT FAVORITE STARTS HERE
+                </p>
+
+                <p class="featured-label">
+                    FEATURED MOVIE
+                </p>
+
+                <h1>
+                    Beyond<br>
+                    <span>the Unknown</span>
+                </h1>
+
+                <div class="movie-meta">
+
+                    <span class="rating">
+                        <i class="bi bi-star-fill"></i> 8.9
+                    </span>
+
+                    <span>2026</span>
+                    <span>2h 08m</span>
+
+                    <span class="quality-tag">
+                        4K UHD
+                    </span>
+
+                </div>
+
+                <p class="hero-description">
+                    One last mission. A world on the edge.
+                    The journey home is only the beginning.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#trending" class="btn btn-watch">
+                        <i class="bi bi-play-fill"></i>
+                        Explore Movies
+                    </a>
+
+                    <a href="#featured-info" class="btn btn-more">
+                        <i class="bi bi-info-circle"></i>
+                        More Info
+                    </a>
+
+                </div>
+
+                <div class="hero-pagination">
+                    <span class="page-active"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+
+            <div class="hero-caption" id="featured-info">
+                <span class="caption-line"></span>
+                <span>Handpicked for your next movie night</span>
+            </div>
+
+        </section>
+
+
+        <!-- MOVIE CATEGORIES -->
+        <section class="container category-section" id="categories">
+
+            <div class="category-list">
+
+                <a class="category-pill selected" href="#trending">
+                    <i class="bi bi-grid-fill"></i> All
+                </a>
+
+                <a class="category-pill" href="#action">Action</a>
+                <a class="category-pill" href="#drama">Drama</a>
+                <a class="category-pill" href="#comedy">Comedy</a>
+                <a class="category-pill" href="#series">TV Series</a>
+                <a class="category-pill" href="#anime">Anime</a>
+                <a class="category-pill" href="#documentary">Documentary</a>
+
+            </div>
+
+        </section>
+
+
+        <!-- TRENDING MOVIES -->
+        <section class="container movie-section" id="trending">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="section-kicker">
+                        WHAT EVERYONE'S WATCHING
+                    </p>
+
+                    <h2>
+                        Trending this week
+                        <span class="heading-accent">.</span>
+                    </h2>
+                </div>
+
+                <a href="#popular" class="see-all">
+                    View all <i class="bi bi-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <div class="row g-4 movie-grid" id="action">
+
+                <!-- MOVIE 1 -->
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+
+                    <a href="#movie-details" class="movie-card">
+
+                        <div class="poster-wrap">
+
+                            <img src="https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg"
+                                 alt="Dune: Part Two movie poster"
+                                 loading="lazy">
+
+                            <span class="poster-quality">4K</span>
+
+                            <span class="poster-play">
+                                <i class="bi bi-play-fill"></i>
+                            </span>
+
+                        </div>
+
+                        <div class="movie-info">
+                            <h3>Dune: Part Two</h3>
+                            <p>2024 <span>•</span> Sci-Fi</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+                <!-- MOVIE 2 -->
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+
+                    <a href="#movie-details" class="movie-card">
+
+                        <div class="poster-wrap">
+
+                            <img src="https://image.tmdb.org/t/p/w500/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg"
+                                 alt="Spider-Man: Across the Spider-Verse movie poster"
+                                 loading="lazy">
+
+                            <span class="poster-quality">HD</span>
+
+                            <span class="poster-play">
+                                <i class="bi bi-play-fill"></i>
+                            </span>
+
+                        </div>
+
+                        <div class="movie-info">
+                            <h3>Across the Spider-Verse</h3>
+                            <p>2023 <span>•</span> Animation</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+                <!-- MOVIE 3 -->
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+
+                    <a href="#movie-details" class="movie-card">
+
+                        <div class="poster-wrap">
+
+                            <img src="https://image.tmdb.org/t/p/w500/ptpr0kGAckfQkJeJIt8st5dglvd.jpg"
+                                 alt="Oppenheimer movie poster"
+                                 loading="lazy">
+
+                            <span class="poster-quality">HD</span>
+
+                            <span class="poster-play">
+                                <i class="bi bi-play-fill"></i>
+                            </span>
+
+                        </div>
+
+                        <div class="movie-info">
+                            <h3>Oppenheimer</h3>
+                            <p>2023 <span>•</span> Drama</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+                <!-- MOVIE 4 -->
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2" id="drama">
+
+                    <a href="#movie-details" class="movie-card">
+
+                        <div class="poster-wrap">
+
+                            <img src="https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg"
+                                 alt="The Batman movie poster"
+                                 loading="lazy">
+
+                            <span class="poster-quality">4K</span>
+
+                            <span class="poster-play">
+                                <i class="bi bi-play-fill"></i>
+                            </span>
+
+                        </div>
+
+                        <div class="movie-info">
+                            <h3>The Batman</h3>
+                            <p>2022 <span>•</span> Crime</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+                <!-- MOVIE 5 -->
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2" id="comedy">
+
+                    <a href="#movie-details" class="movie-card">
+
+                        <div class="poster-wrap">
+
+                            <img src="https://image.tmdb.org/t/p/w500/kDp1vUBnMpe8ak4rjgl3cLELqjU.jpg"
+                                 alt="Kung Fu Panda 4 movie poster"
+                                 loading="lazy">
+
+                            <span class="poster-quality">HD</span>
+
+                            <span class="poster-play">
+                                <i class="bi bi-play-fill"></i>
+                            </span>
+
+                        </div>
+
+                        <div class="movie-info">
+                            <h3>Kung Fu Panda 4</h3>
+                            <p>2024 <span>•</span> Comedy</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+                <!-- MOVIE 6 -->
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2" id="anime">
+
+                    <a href="#movie-details" class="movie-card">
+
+                        <div class="poster-wrap">
+
+                            <img src="https://image.tmdb.org/t/p/w500/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg"
+                                 alt="John Wick: Chapter 4 movie poster"
+                                 loading="lazy">
+
+                            <span class="poster-quality">4K</span>
+
+                            <span class="poster-play">
+                                <i class="bi bi-play-fill"></i>
+                            </span>
+
+                        </div>
+
+                        <div class="movie-info">
+                            <h3>John Wick: Chapter 4</h3>
+                            <p>2023 <span>•</span> Action</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TV SHOW BANNER -->
+        <section class="container promo-section" id="series">
+
+            <div class="promo-banner">
+
+                <div class="promo-copy">
+
+                    <span class="promo-tag">
+                        THE FRAMEPLAY PICK
+                    </span>
+
+                    <h2>
+                        Your next series<br>
+                        is waiting.
+                    </h2>
+
+                    <p>
+                        From edge-of-your-seat thrillers
+                        to stories that stay with you.
+                    </p>
+
+                    <a href="#popular" class="btn btn-watch">
+                        Browse TV shows
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="promo-decoration">
+                    <span>F</span>
+                    <span>P</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- POPULAR MOVIES -->
+        <section class="container movie-section popular-section" id="popular">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="section-kicker">
+                        MORE GOOD PICKS
+                    </p>
+
+                    <h2>
+                        Popular right now
+                        <span class="heading-accent">.</span>
+                    </h2>
+                </div>
+
+                <a href="#home" class="see-all">
+                    Back to top
+                    <i class="bi bi-arrow-up-right"></i>
+                </a>
+
+            </div>
+
+
+            <div class="row g-4 movie-grid" id="documentary">
+
+                <!-- POPULAR MOVIE 1 -->
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+
+                    <a href="#movie-details" class="movie-card">
+
+                        <div class="poster-wrap">
+
+                            <img src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
+                                 alt="Interstellar movie poster"
+                                 loading="lazy">
+
+                            <span class="poster-play">
+                                <i class="bi bi-play-fill"></i>
+                            </span>
+
+                        </div>
+
+                        <div class="movie-info">
+                            <h3>Interstellar</h3>
+                            <p>2014 <span>•</span> Sci-Fi</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+                <!-- POPULAR MOVIE 2 -->
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+
+                    <a href="#movie-details" class="movie-card">
+
+                        <div class="poster-wrap">
+
+                            <img src="https://image.tmdb.org/t/p/w500/hkxxMIGaiCTmrEArK7J56JTKUlB.jpg"
+                                 alt="Godzilla Minus One movie poster"
+                                 loading="lazy">
+
+                            <span class="poster-play">
+                                <i class="bi bi-play-fill"></i>
+                            </span>
+
+                        </div>
+
+                        <div class="movie-info">
+                            <h3>Godzilla Minus One</h3>
+                            <p>2023 <span>•</span> Action</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+                <!-- POPULAR MOVIE 3 -->
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+
+                    <a href="#movie-details" class="movie-card">
+
+                        <div class="poster-wrap">
+
+                            <img src="https://image.tmdb.org/t/p/w500/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg"
+                                 alt="Avatar: The Way of Water movie poster"
+                                 loading="lazy">
+
+                            <span class="poster-play">
+                                <i class="bi bi-play-fill"></i>
+                            </span>
+
+                        </div>
+
+                        <div class="movie-info">
+                            <h3>Avatar: The Way of Water</h3>
+                            <p>2022 <span>•</span> Adventure</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+                <!-- POPULAR MOVIE 4 -->
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+
+                    <a href="#movie-details" class="movie-card">
+
+                        <div class="poster-wrap">
+
+                            <img src="https://image.tmdb.org/t/p/w500/vcZWJGvB5xydWuUO1vaTLI82tGi.jpg"
+                                 alt="Napoleon movie poster"
+                                 loading="lazy">
+
+                            <span class="poster-play">
+                                <i class="bi bi-play-fill"></i>
+                            </span>
+
+                        </div>
+
+                        <div class="movie-info">
+                            <h3>Napoleon</h3>
+                            <p>2023 <span>•</span> History</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+                <!-- POPULAR MOVIE 5 -->
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+
+                    <a href="#movie-details" class="movie-card">
+
+                        <div class="poster-wrap">
+
+                            <img src="https://image.tmdb.org/t/p/w500/NNxYkU70HPurnNCSiCjYAmacwm.jpg"
+                                 alt="Mission Impossible Dead Reckoning movie poster"
+                                 loading="lazy">
+
+                            <span class="poster-play">
+                                <i class="bi bi-play-fill"></i>
+                            </span>
+
+                        </div>
+
+                        <div class="movie-info">
+                            <h3>Dead Reckoning</h3>
+                            <p>2023 <span>•</span> Thriller</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+                <!-- POPULAR MOVIE 6 -->
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+
+                    <a href="#movie-details" class="movie-card">
+
+                        <div class="poster-wrap">
+
+                            <img src="https://image.tmdb.org/t/p/w500/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg"
+                                 alt="Inside Out 2 movie poster"
+                                 loading="lazy">
+
+                            <span class="poster-play">
+                                <i class="bi bi-play-fill"></i>
+                            </span>
+
+                        </div>
+
+                        <div class="movie-info">
+                            <h3>Inside Out 2</h3>
+                            <p>2024 <span>•</span> Animation</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MOVIE PLAYER PLACEHOLDER -->
+        <section class="container player-note" id="movie-details">
+
+            <i class="bi bi-camera-reels"></i>
+
+            <div>
+                <h2>Ready for movie night?</h2>
+
+                <p>
+                    This is the front-end design.
+                    Connect a licensed video source or your own
+                    video files to make the Watch buttons play movies.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <a class="navbar-brand brand-name" href="#home">
+
+                <span class="brand-mark">
+                    <i class="bi bi-play-fill"></i>
+                </span>
+
+                FRAME<span>PLAY</span>
+
+            </a>
+
+            <p>Good stories. Great nights.</p>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#trending">Movies</a>
+                <a href="#series">TV Shows</a>
+                <a href="#categories">Genres</a>
+            </div>
+
+            <small>
+                © 2026 FramePlay. Movie artwork belongs to its respective owners.
+            </small>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
